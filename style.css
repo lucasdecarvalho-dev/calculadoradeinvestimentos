@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    background-color: rgb(182, 80, 80);
+}
+
+#container {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    font-size: 13px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+header {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#valores {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    font-size: 16px;
+    
+}
+
+#mes {
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input {
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-family: "Montserrat", sans-serif;
+    width: 150px;
+    border: none;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+button {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    border: solid 1px black;
+}
+
+#adicionar {
+    width: 200px;
+}
+
+#lucro{
+    margin: 0 auto;
+    width: 100px;
+}
+
+#calcularValores {
+    background-color: white;
+    margin: 30px auto;
+}
+
+button:hover {
+    background-color: #d4b8b8;
+}
+
+#resultado {
+    display: none;
+    margin-top: 20px;
+    font-size: 19px;
+    text-align: left;
+}
+
+#resultado p {
+    margin-bottom: 5px;
+}
+
+#resultado #lucro {
+    background-color: rgb(103, 228, 103);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+        display: flex;
+        width: 100vw;
+        align-items: center;     /* Alinha verticalmente */
+    }
+
+    #container {
+        width: 100vw;
+        height: 100%;
+    }
+
+    header {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #mes {
+        font-size: 18px;
+    }
+
+    #valores {
+        font-size: 18px;
+    }  
+
+    #pecas {
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    #taxaDeEntrega label {
+        font-size: 18px;
+    }
+
+    input {
+        font-size: 18px;
+        width: 50px;
+    }
+    
+    button {
+        font-size: 18px;
+    }
+
+    #resultado {
+        font-size: 18px;
+    }
+
+    .peca {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Investimentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            Calculadora de Investimentos
+        </header>
+        
+        <div id="valores">
+            <label for="mes">Mês:
+                <select name="mes" id="mes">
+                    <option value="Janeiro">Janeiro</option>
+                    <option value="Fevereiro">Fevereiro</option>
+                    <option value="Março">Março</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Maio">Maio</option>
+                    <option value="Junho">Junho</option>
+                    <option value="Julho">Julho</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Setembro">Setembro</option>
+                    <option value="Outubro">Outubro</option>
+                    <option value="Novembro">Novembro</option>
+                    <option value="Dezembro">Dezembro</option>
+                </select>
+            </label>
+            <div id="pecas">
+                <div class="peca">
+                    <h2>Peça 1</h2>
+                    <label for="valorPeca1">Valor Unitário: <input type="number" name="valorPeca1" id="valorPeca1" placeholder="0,00" > </label>
+                    <label for="quantidadePecas1">Quantidade: <input type="number" name="quantidadePecas1" id="quantidadePecas1" placeholder="0" ></label>
+                    <label for="valorDeVenda1">Valor de Venda Unitário: <input type="number" name="valorDeVenda1" id="valorDeVenda1" placeholder="0,00" ></label>
+                </div>
+            </div>
+
+            <br>
+            <div id="taxaDeEntrega">
+                <h2>Taxa de Entrega</h2>
+                <label for="taxa">Taxa de Entrega: <input type="number" name="taxa" id="taxa"></label>
+            </div>
+            
+        </div>
+
+        <div id="buttons">
+            <button id="adicionar" onclick="adicionar()">Adicionar mais uma variação de peça</button>
+            <button id="calcularValores" onclick="calcular()">Calcular Valores</button>
+        </div>
+        
+        <div id="resultado">
+            <p id="valorOriginal">Valor original:</p>
+            <p id="acrescentarFrete">Acréscimo de frete por peça: </p>
+            <p id="valorFinal">Valor final: </p>
+            <p id="lucro">Lucro: </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
